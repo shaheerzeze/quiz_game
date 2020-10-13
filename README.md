@@ -1,2 +1,3 @@
 # quiz_game
-Created with CodeSandbox
+Created by Shaheer zeze
+devze creatios.
