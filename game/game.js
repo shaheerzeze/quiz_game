@@ -47,6 +47,12 @@ startGame = () => {
 };
 
 getNewQuestion = () => {
+
+  if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS){
+    //go to the end page
+    return window.location.assign("./end.htmlgit")
+  }
+
   questionCounter++;
   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
