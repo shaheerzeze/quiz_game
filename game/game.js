@@ -50,7 +50,7 @@ getNewQuestion = () => {
 
   if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS){
     //go to the end page
-    return window.location.assign("./end.htmlgit")
+    return window.location.assign("./end.html")
   }
 
   questionCounter++;
