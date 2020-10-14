@@ -67,7 +67,7 @@
   border-top: 1.6rem solid rgb(248, 248, 248);
   width: 12rem;
   height: 12rem;
-  animation:  spin 1.5s linear infinite;
+  animation:  spin 2s linear infinite;
 }
 
 @keyframes spin {
@@ -76,5 +76,19 @@
   }
   100% {
     transform: rotate(360deg) ;
+  }
+}
+
+
+@media only screen and (max-width:780px){
+  #progressBar{
+    height: 1.5rem;
+    border: 4px solid #0088f7;
+    border-radius: 50px;
+    width: 80%;
+  }
+  #progressBarFull{
+    height: 1rem;
+    background-color: #0088f7;
   }
 }

@@ -1,5 +1,6 @@
 :root {
-  background-color: #ecf5ff;
+  background-color: #2a2a72;
+background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
   font-size: 62.5%;
 }
 
@@ -19,24 +20,24 @@ h4 {
 }
 
 h1 {
-  font-size: 5.4rem;
+  font-size: 3rem;
   color: #56a5eb;
   margin-bottom: 5rem;
 }
 
 h1 > span {
-  font-size: 2.4rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
 h2 {
-  font-size: 4.2rem;
+  font-size: 2rem;
   margin-bottom: 4rem;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 2.8rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -126,4 +127,14 @@ input{
 input::placeholder{
   color: #aaa;
   
+}
+
+
+@media only screen and (max-width:780px){
+  p{
+    font-size: 1.5rem;
+  }
+  h2{
+    font-size: 2.5rem;
+  }
 }
