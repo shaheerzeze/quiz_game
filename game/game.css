@@ -10,7 +10,7 @@
 .choice-container:hover {
   cursor: pointer;
   box-shadow: 0 0.4rem 1.4rem 0 #0088ff69;
-  transform: translateY(-0.1rem);
+  transform: translateY(-0.9rem);
   transition: transform 150ms;
   
 }
@@ -32,7 +32,7 @@
 }
 .incorrect {
   background-color: #dc3545 ;
-  color: white;
+  color: white !important;
 }
 /* head*/
 #hud {
