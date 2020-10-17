@@ -4,7 +4,6 @@
   width: 100%;
   font-size: 1.8rem;
    background-color: rgb(255, 255, 255);
-   box-shadow: 0rem 0rem 1rem 0.4rem rgba(4, 146, 255, 0.241);
    border-radius: 50px;
    height: 20%;
 }
@@ -13,6 +12,7 @@
   box-shadow: 0 0.4rem 1.4rem 0 #0088ff69;
   transform: translateY(-0.1rem);
   transition: transform 150ms;
+  
 }
 
 .choice-prefix {
@@ -32,6 +32,7 @@
 }
 .incorrect {
   background-color: #dc3545 ;
+  color: white;
 }
 /* head*/
 #hud {
@@ -65,20 +66,42 @@
 
 /*--loader-------*/
 #loader {
-  border: 1.6rem solid rgb(0, 208, 255);
+  height: 1rem;
+  width: 1rem;
+  background: #f94144;
   border-radius: 50%;
-  border-top: 1.6rem solid rgb(248, 248, 248);
-  width: 12rem;
-  height: 12rem;
-  animation:  spin 2s linear infinite;
+  position: relative;
 }
-
-@keyframes spin {
-  0%{
-    transform: rotate(0deg);
+#loader::before, #loader::after {
+  border-radius: inherit;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  -webkit-animation: animate 2s ease infinite;
+          animation: animate 2s ease infinite;
+}
+#loader::before {
+  box-shadow: 0px 0px 0px transparent, 0rem 1rem #f8961e, -1rem 0rem #f8961e, 0rem -1rem #f8961e, 1rem 0rem #f8961e;
+}
+#loader::after {
+  box-shadow: 0px 0px 0px transparent, 0rem 2rem #43aa8b, -2rem 0rem #43aa8b, 0rem -2rem #43aa8b, 2rem 0rem #43aa8b;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+@-webkit-keyframes animate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
-  100% {
-    transform: rotate(360deg) ;
+}
+@keyframes animate {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
