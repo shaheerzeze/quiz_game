@@ -17,9 +17,9 @@
 
 .choice-prefix {
   padding: 1.5rem 2.5rem;
-  background-color: rgb(0, 136, 247);
-  color: bisque;
-  border-radius: 50px;
+  color: black;
+    border-radius: 50px;
+    box-shadow: 0.11rem 0.2rem 1rem 0rem #00000057;
 }
 
 .choice-text {
@@ -87,7 +87,7 @@
           animation: animate 2s ease infinite;
 }
 #loader::before {
-  box-shadow: 0px 0px 0px transparent, 0rem 1rem #f8961e, -1rem 0rem #f8961e, 0rem -1rem #f8961e, 1rem 0rem #f8961e;
+  box-shadow: 0px 0px 0px transparent, 0rem 1rem #FFF, -1rem 0rem #FFF, 0rem -1rem #FFF, 1rem 0rem #ffffff;
 }
 #loader::after {
   box-shadow: 0px 0px 0px transparent, 0rem 2rem #43aa8b, -2rem 0rem #43aa8b, 0rem -2rem #43aa8b, 2rem 0rem #43aa8b;
@@ -113,7 +113,7 @@
     height: 1.5rem;
     border: 4px solid #0088f7;
     border-radius: 50px;
-    width: 80%;
+    width: 120%;
   }
   #progressBarFull{
     height: 1rem;
