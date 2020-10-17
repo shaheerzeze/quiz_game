@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Josefin+Sans:wght@500&family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Roboto:wght@900&display=swap');
 :root {
   
   font-size: 62.5%;
 }
 body{
-  background-image: url("./icons/Purple\ Modern\ Illustrated\ 3D\ Humans\ Quiz\ Education\ Presentation.jpg");
+  background-image: url("./icons/4493650.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -25,11 +25,15 @@ h4 {
 }
 
 h1 {
-  font-size: 4rem;
-  color: #ffffff;
+  border-radius: 30px;
+  font-size: 9rem;
+  background: aliceblue;
+  width: 100%;
+  text-align: center;
+  color: #e9845d;
   margin-bottom: 5rem;
-  font-family: 'Comfortaa', cursive;
- 
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 1.4rem 1.4rem 0 #0000006b;
 }
 
 h1 > span {
@@ -99,10 +103,12 @@ text-align: center;
 margin-bottom: 1rem;
 text-decoration: none;
 color: #ffffff;
+box-shadow: 0 0.4rem 1.4rem 0 #000000ad;
+border-radius: 50px;
 }
 .btn:hover{
 cursor: pointer;
-box-shadow: 0 0.4rem 1.4rem 0 #0088ff69;
+box-shadow: 0 0.4rem 1.4rem 0 #000000;
 transform: translateY(-0.1rem);
 transition: transform 150ms;
 
@@ -112,30 +118,7 @@ transition: transform 150ms;
 cursor: not-allowed;
 transform: none;
 }
-.btn-1{
-font-size: 1.8rem;
-padding: 5rem 1rem;
-border-radius: 100%;
-width: 50%;
-text-align: center;
-margin-bottom: 1rem;
-text-decoration: none;
-color: #56a5eb;
-background-color: white;
-}
-.btn-1:hover{
-cursor: pointer;
-border-radius: 50%;
-box-shadow: 0 0.4rem 1.4rem 0 #0088ff69;
-transform: translateY(-0.4rem);
-transition: transform 150ms;
 
-}
-
-.btn-1[disabled]:hover{
-cursor: not-allowed;
-transform: none;
-}
 
 
 
@@ -170,7 +153,7 @@ input::placeholder{
 
 @media only screen and (max-width:780px){
   p{
-    font-size: 14px;
+    font-size: 14px !important;
    ;
   }
   h2{

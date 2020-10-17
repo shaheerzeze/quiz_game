@@ -44,6 +44,8 @@
 .hud-prefix {
   text-align: center;
   font-size: 2rem;
+    color: white;
+
 }
 .hud-main-text {
   text-align: center;
