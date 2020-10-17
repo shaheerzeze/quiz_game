@@ -28,10 +28,10 @@
 }
 
 .correct {
-  background-color: #28a745;
+  background-color: #3fff6b;
 }
 .incorrect {
-  background-color: #dc3545 ;
+  background-color: #ff4759 ;
   color: white;
 }
 /* head*/
